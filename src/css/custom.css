@@ -1,0 +1,37 @@
+.box {
+  width: 18rem;
+  height: 13rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.main {
+  background: linear-gradient(45deg, #a449f6, #ff9500);
+}
+
+.load {
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.img {
+  width: 18rem;
+  height: 13rem;
+  border-radius: 10px;
+}
+
+.er-mg {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+}
