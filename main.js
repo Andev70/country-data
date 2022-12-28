@@ -15,18 +15,22 @@ const getFlag = async function () {
 };
 
 getFlag().then((countries) => {
-  countries.forEach((country) => {
-    parentFlag.innerHTML += `
-          
- <div class="flags items-center justify-between">
-              <img src="${country.flags.png}" class="img" />
+  console.log(countries);
+
+  let checkCountry = countries.map((item) => {
+    return `
+ <section class="parent flex items-center w-full h-max">
+<div class="flags items-center justify-between">
+              <img src="${item.flags.png}" class="img" />
               <a class="info-link" href="#">
-                <h1 class="country-name">${country.name.common}</h1>
+                <h1 class="country-name">${item.name.common}</h1>
               </a>
             </div>
-          
-           
+          </section>
     `;
   });
-  
+
+  let coutriesHTML = checkCountry.join("");
+
+  main.innerHTML = coutriesHTML;
 });
