@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 .flags {
-  width: 18rem;
+  width: 20rem;
   height: 15rem;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -26,11 +26,12 @@
 
 .main {
   background: linear-gradient(45deg, #a449f6, #ff9500);
+padding-bottom: 10px;
 }
 
 .load {
   animation-name: loading;
-  animation-iteration-count:infinite ;
+  animation-iteration-count: infinite;
   animation-duration: 1.5s;
   animation-timing-function: linear;
 }
@@ -42,7 +43,7 @@
 }
 
 .img {
-  width: 18rem;
+  width: 20rem;
   height: 13rem;
   border-radius: 10px;
   border-radius: 10px 10px 0 0;
@@ -57,6 +58,8 @@
 .container {
   flex-direction: column;
   overflow: scroll;
+  height: 100vh;
+  padding-bottom: 10px;
 }
 
 .tittle-text {
@@ -85,3 +88,8 @@
   row-gap: 10px;
 }
 
+.err-msg {
+  font-size: 22px;
+  font-weight: 700;
+  
+}

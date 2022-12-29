@@ -4,7 +4,7 @@ import "./src/sass/test.scss";
 const parentFlag = document.querySelector(".parent");
 const main = document.querySelector(".box");
 
-const getFlag = async function () {
+const getFlag = async () => {
   try {
     const response = await fetch(`https://restcountries.com/v3.1/all `);
     const data = await response.json();
@@ -15,10 +15,9 @@ const getFlag = async function () {
 };
 
 getFlag().then((countries) => {
-  console.log(countries);
-
-  let checkCountry = countries.map((item) => {
-    return `
+  if (countries !== undefined) {
+    let checkCountry = countries.map((item) => {
+      return `
  <section class="parent flex items-center w-full h-max">
 <div class="flags items-center justify-between">
               <img src="${item.flags.png}" class="img" />
@@ -28,9 +27,16 @@ getFlag().then((countries) => {
             </div>
           </section>
     `;
-  });
+    });
 
-  let coutriesHTML = checkCountry.join("");
+    let coutriesHTML = checkCountry.join("");
 
-  main.innerHTML = coutriesHTML;
+    main.innerHTML = coutriesHTML;
+  } else if (countries === undefined) {
+    const errorShow = () => {
+      const loader = document.querySelector(".loader");
+      loader.innerHTML = `<h1 class="err-msg text-slate-500">SOMETHING WENT WORNG</h1>`;
+    };
+    setTimeout(errorShow, 5000);
+  }
 });
