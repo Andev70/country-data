@@ -5,9 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="./src/css/info_custom.css" />
+    <script defer type="module" src="./show_info.js"></script>
   </head>
   <body>
-    <div class="info"></div>
-    <script type="module" src="./show_info.js"></script>
+    <div class="main--body flex flex-col items-center">
+      <div class="wrapper">
+        <!-- showing neighbour -->
+        <section class="neihbour">
+          <div class="keep__nei flex h-max flex-wrap">
+         
+          </div>
+        </section>
+
+        <!-- name -->
+        <div class="name--info w-full">
+          <section class="box w-full flex flex-col">
+            <h1 class="name--label w-full flex items-center">
+              <img src="./src/assets/star-solid.svg" class="img-star" />
+              <span class="label">name</span>
+            </h1>
+            <section class="tittle w-max">
+              <h1 class="name">republic of india</h1>
+            </section>
+          </section>
+        </div>
+        <!-- currencies info -->
+        <div class="name--info w-full">
+          <section class="box w-full flex flex-col">
+            <h1 class="name--label w-full flex items-center">
+              <img src="./src/assets/star-solid.svg" class="img-star" />
+              <span class="label">currency</span>
+            </h1>
+            <section class="tittle currency--tittle w-max">
+              <h1 class="name currency">indian rupee</h1>
+            </section>
+          </section>
+        </div>
+        <!-- capital info -->
+        <div class="name--info w-full">
+          <section class="box w-full flex flex-col">
+            <h1 class="name--label w-full flex items-center">
+              <img src="./src/assets/star-solid.svg" class="img-star" />
+              <span class="label">capital</span>
+            </h1>
+            <section class="tittle w-max">
+              <h1 class="name">delhi</h1>
+            </section>
+          </section>
+        </div>
+        <!-- area population -->
+        <section class="area--population w-full flex">
+          <div class="area--box h-max">
+            <h1 class="area--label flex items-center">
+              <img src="./src/assets/star-solid.svg" class="icon img-star" />
+              <span class="label-area label-pop">area</span>
+            </h1>
+            <div class="wrap w-max">
+              <h2 class="area--num">123546783</h2>
+            </div>
+          </div>
+          <div class="area--box pop--box h-max">
+            <h1 class="area--label pop--label flex items-center">
+              <img src="./src/assets/star-solid.svg" class="icon img-star" />
+              <span class="label-pop label-area">population</span>
+            </h1>
+            <div class="wrap w-max">
+              <h2 class="area--num pop--num">123546783</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,98 @@
+.main--body {
+  background: linear-gradient(45deg, #696eff, #f8acff);
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.neihbour {
+  width: 23rem;
+  height: 16rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  overflow: scroll;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.each--neihbour {
+  width: 10.56rem;
+  height: 8rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+}
+.keep__nei {
+  gap: 10px;
+}
+
+.tittle {
+  padding: 3px 9px 3px 9px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  min-width: 9rem;
+}
+
+.name--info {
+  padding-top: 10px;
+}
+.name--label {
+  font-size: 18px;
+}
+
+.box {
+  width: 8rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.img-star {
+  width: 8px;
+  height: 8px;
+}
+
+.name--label {
+  column-gap: 3px;
+}
+
+.name {
+  font-size: 15px;
+}
+
+.area--box {
+  width: 11.5rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 0 10px 10px 10px;
+  row-gap: 3px;
+}
+.area--population {
+  padding-top: 10px;
+  column-gap: 10px;
+}
+.area--label {
+  column-gap: 3px;
+}
+.label-area {
+  font-size: 18px;
+}
+
+.area--num {
+  font-size: 15px;
+}
+.wrap {
+  min-width: 6rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  padding: 3px 9px 3px 9px;
+}
+.show--nei{
+  border-radius: 4px;
+}
+  

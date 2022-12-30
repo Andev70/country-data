@@ -44,7 +44,7 @@ getFlag().then((countries) => {
   document.addEventListener("click", (e) => {
     const target = e.target;
     if (target.classList.contains("country-name")) {
-      console.log(target.innerHTML);
+      
       sessionStorage.clear()
       sessionStorage.setItem("name", target.innerHTML);
     } else {
