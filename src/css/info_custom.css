@@ -23,6 +23,7 @@
 }
 .keep__nei {
   gap: 10px;
+  min-height: 100%;
 }
 
 .tittle {
@@ -92,7 +93,23 @@
   border-radius: 4px;
   padding: 3px 9px 3px 9px;
 }
-.show--nei{
+.show--nei {
   border-radius: 4px;
 }
-  
+
+.error--parent {
+  min-height: 100%;
+}
+
+.error--msg {
+  font-weight: 700;
+}
+
+.fetal--err {
+  height: 20rem;
+}
+.no--fetch {
+  font-size: 23px;
+  font-weight: 700px;
+  text-decoration: underline;
+}
