@@ -8,7 +8,8 @@
   display: flex;
   flex-direction: column;
   /* border: 1px solid rgba(255, 255, 255, 0.2);*/
-  border-radius: 10px;}
+  border-radius: 10px;
+}
 
 .box {
   padding-top: 15px;
@@ -21,11 +22,12 @@
   row-gap: 10px;
   overflow: scroll;
   min-height: 100vh;
+  margin-top: 20px;
 }
 
 .main {
   background: linear-gradient(45deg, #a449f6, #ff9500);
-padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .load {
@@ -59,6 +61,7 @@ padding-bottom: 10px;
   overflow: scroll;
   height: 100vh;
   padding-bottom: 10px;
+  padding: 0 6px 0 6px;
 }
 
 .tittle-text {
@@ -90,5 +93,51 @@ padding-bottom: 10px;
 .err-msg {
   font-size: 22px;
   font-weight: 700;
-  
+}
+
+.search--area {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  min-height: 6rem;
+}
+.input--parent {
+  width: 20rem;
+  height: 3rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.search--input {
+  border-radius: 999px 0 0 999px;
+  height: 100%;
+  width: 80%;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0 5px 0 15px;
+}
+
+.search--btn {
+  border-radius: 0 999px 999px 0;
+  width: 20%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+.boxer {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  height: max-content;
+  border-radius: 10px;
+  overflow: scroll;
+  padding: 10px;
+  flex-direction: column;
+  row-gap: 10px;
 }

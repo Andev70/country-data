@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   autoprefixer: ^10.4.13
+  lodash: ^4.17.21
   postcss: ^8.4.20
   sass: ^1.57.1
   tailwindcss: ^3.2.4
   vite: ^4.0.0
 
 dependencies:
+  lodash: 4.17.21
   sass: 1.57.1
 
 devDependencies:
@@ -489,6 +491,10 @@ packages:
     resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==}
     engines: {node: '>=10'}
     dev: true
+
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: false
 
   /merge2/1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}

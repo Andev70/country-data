@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/custom.css" />
     <title>Vite App</title>
- <script defer type="module" src="/main.js"></script>
+    <script defer type="module" src="/main.js"></script>
   </head>
   <body>
     <main class="main w-screen h-screen">
@@ -15,6 +15,21 @@
           <h1 class="tittle-text text-slat-700">COUNTRY INFO BELOW</h1>
           <div class="line"></div>
         </header>
+        <!-- search area -->
+        <section class="search--area w-full flex justify-center items-center">
+          <div class="input--parent flex rounded-full">
+            <input
+              type="text"
+              placeholder="search a country name..."
+              class="search--input"
+            />
+            <button class="search--btn">
+              <img src="./src/assets/icons8-search.svg" class="search--icon" />
+            </button>
+          </div>
+        </section>
+
+        <!-- main content-->
         <section class="box flex items-center w-full h-screen">
           <div
             class="loader bg-transparent flex justify-center items-center h-full w-full"
@@ -24,6 +39,5 @@
         </section>
       </div>
     </main>
-   
   </body>
 </html>
