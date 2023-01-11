@@ -1,5 +1,5 @@
 import "./style.css";
-import "./src/sass/test.scss";
+import "./src/sass/test.scss"
 import _ from "lodash";
 
 const parentFlag = document.querySelector(".parent");
@@ -92,7 +92,7 @@ const showSearchResult = () => {
     console.log(allNames);
     sessionStorage.clear();
     sessionStorage.setItem("res", JSON.stringify(allNames));
-    location.href= './Search--result.html'
+    location.href = "./Search--result.html";
   });
 };
 
